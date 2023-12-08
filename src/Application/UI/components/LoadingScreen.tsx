@@ -52,7 +52,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
             setToLoad(data.toLoad);
             setLoaded(data.loaded);
             resources.push(
-                `Loaded ${data.sourceName}${getSpace(
+                `Chargé ${data.sourceName}${getSpace(
                     data.sourceName
                 )} ... ${Math.round(data.progress * 100)}%`
             );
@@ -161,7 +161,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         <div style={styles.logoContainer}>
                             <div>
                                 <p style={styles.green}>
-                                    <b>Heffernan,</b>{' '}
+                                    <b>Next Generation ,</b>{' '}
                                 </p>
                                 <p style={styles.green}>
                                     <b>Next genration Inc.</b>
@@ -169,30 +169,30 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                             </div>
                         </div>
                         <div style={styles.headerInfo}>
-                            <p>Released: 01/13/2000</p>
+                            <p>Sortie : 01/13/2000</p>
                             <p>HHBIOS (C)2000 Next genration Inc.,</p>
                         </div>
                     </div>
                     <div style={styles.body} className="loading-screen-body">
-                        <p>HSP S13 2000-2022 Special UC131S</p>
+                        <p>HSP S13 2000-2022 Spécial UC131S</p>
                         <div style={styles.spacer} />
                         {showBiosInfo && (
                             <>
                                 <p>HSP Showcase(tm) XX 113</p>
-                                <p>Checking RAM : {14000} OK</p>
+                                <p>Vérification de la RAM : {14000} OK</p>
                                 <div style={styles.spacer} />
                                 <div style={styles.spacer} />
                                 {showLoadingResources ? (
                                     progress == 1 ? (
-                                        <p>FINISHED LOADING RESOURCES</p>
+                                        <p>CHARGEMENT DES RESSOURCES TERMINÉ</p>
                                     ) : (
                                         <p className="loading">
-                                            LOADING RESOURCES ({loaded}/
+                                            CHARGEMENT DES RESSOURCES ({loaded}/
                                             {toLoad === 0 ? '-' : toLoad})
                                         </p>
                                     )
                                 ) : (
-                                    <p className="loading">WAIT</p>
+                                    <p className="loading">ATTENTE</p>
                                 )}
                             </>
                         )}
@@ -205,7 +205,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         <div style={styles.spacer} />
                         {showLoadingResources && doneLoading && (
                             <p>
-                                All Content Loaded, launching{' '}
+                                Tous les contenus chargés, lancement de{' '}
                                 <b style={styles.green}>
                                     'Next generation Nuit de l'info'
                                 </b>{' '}
@@ -220,8 +220,8 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         className="loading-screen-footer"
                     >
                         <p>
-                            Press <b>DEL</b> to enter SETUP , <b>ESC</b> to skip
-                            memory test
+                            Appuyez sur <b>SUPPR</b> pour accéder au SETUP,{' '}
+                            <b>ESC</b> pour ignorer le test de mémoire
                         </p>
                         <p>{getCurrentDate()}</p>
                     </div>
@@ -255,7 +255,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         </>
                     )}
                     <div style={{ display: 'flex', alignItems: 'flex-end' }}>
-                        <p>Click start to begin{'\xa0'}</p>
+                        <p>Cliquez sur Démarrer pour commencer{'\xa0'}</p>
                         <span className="blinking-cursor" />
                     </div>
                     <div
@@ -267,7 +267,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         }}
                     >
                         <div className="bios-start-button" onClick={start}>
-                            <p>START</p>
+                            <p>Démarrer</p>
                         </div>
                     </div>
                 </div>
@@ -287,12 +287,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         <div style={styles.spacer} />
                         <p>
                             Due to a{' '}
-                            <a
-                                style={styles.link}
-                                href={
-                                    ''
-                                }
-                            >
+                            <a style={styles.link} href={''}>
                                 bug in firefox
                             </a>
                             , this website is temporarily inaccessible for

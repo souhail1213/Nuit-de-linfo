@@ -5,6 +5,7 @@ import HelpPrompt from './components/HelpPrompt';
 import InterfaceUI from './components/InterfaceUI';
 import eventBus from './EventBus';
 import './style.css';
+import { ErrorBoundary } from 'react-error-boundary';
 
 const App = () => {
     const [loading, setLoading] = useState(true);

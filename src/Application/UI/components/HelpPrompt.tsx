@@ -3,7 +3,8 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import UIEventBus from '../EventBus';
 
-const HELP_TEXT = 'Click anywhere to begin';
+const HELP_TEXT =
+    "Cliquez n'importe où pour commencer. Peut-être y trouverez-vous quelque chose d'intéressant";
 
 type HelpPromptProps = {};
 
