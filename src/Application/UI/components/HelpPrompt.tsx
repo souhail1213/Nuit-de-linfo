@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import UIEventBus from '../EventBus';
 
 const HELP_TEXT =
-    "Cliquez n'importe où pour commencer. Peut-être y trouverez-vous quelque chose d'intéressant";
+    "Cliquez n'importe où pour commencer. Peut-être y trouverez-vous quelque chose d'intéressant. Faites défiler vers le bas pour continuer la navigation.";
 
 type HelpPromptProps = {};
 
